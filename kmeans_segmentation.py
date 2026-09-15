@@ -1,4 +1,5 @@
-"""Method A: unsupervised segmentation via K-Means clustering on pixel
+"""
+Method A: unsupervised segmentation via K-Means clustering on pixel
 colors (scikit-learn). This is a genuine, classic unsupervised-ML approach
 to segmentation: it groups pixels purely by color similarity, with no
 knowledge of which cluster corresponds to which real-world class — that
@@ -14,6 +15,7 @@ testing, a fixed K=4 on a single-shape image (2 real color populations)
 visibly fragmented the near-uniform background into three noisy clusters
 of essentially random pixels, since K-Means must assign every point to
 some cluster even when the "right" answer is fewer clusters than K.
+
 """
 
 import numpy as np
