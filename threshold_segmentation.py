@@ -1,4 +1,5 @@
-"""Method B: classical threshold-based segmentation — Otsu thresholding to
+"""
+Method B: classical threshold-based segmentation — Otsu thresholding to
 separate foreground from background, connected-component labeling to split
 the foreground into individual blobs, then each blob is classified by
 matching its average color to a set of known reference colors.
@@ -8,6 +9,7 @@ reference colors for each class), so its output labels are directly
 comparable to ground-truth classes with no post-hoc matching needed — a
 reasonable classical alternative when you do know roughly what colors to
 expect.
+
 """
 
 import cv2
