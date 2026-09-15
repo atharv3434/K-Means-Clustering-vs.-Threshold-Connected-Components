@@ -1,4 +1,5 @@
-"""Generate synthetic images with per-pixel semantic segmentation ground
+"""
+Generate synthetic images with per-pixel semantic segmentation ground
 truth (circle / square / triangle / background), with realistic color
 noise so segmentation isn't a trivial exact-threshold problem.
 
