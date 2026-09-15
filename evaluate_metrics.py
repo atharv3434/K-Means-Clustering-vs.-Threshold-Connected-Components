@@ -1,5 +1,7 @@
-"""Segmentation evaluation metrics: optimal label matching (for
+"""
+Segmentation evaluation metrics: optimal label matching (for
 unsupervised clustering output), pixel accuracy, per-class IoU, and Dice.
+
 """
 
 import numpy as np
