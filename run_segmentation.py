@@ -1,8 +1,10 @@
-"""Run both segmentation methods over the dataset, evaluate each against
+"""
+Run both segmentation methods over the dataset, evaluate each against
 ground truth, and save visual comparisons.
 
 Usage:
     python src/run_segmentation.py [--config config.yaml]
+    
 """
 
 import argparse
