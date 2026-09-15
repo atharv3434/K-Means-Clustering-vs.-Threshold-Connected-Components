@@ -1,0 +1,26 @@
+# Configuration for the image segmentation project.
+
+images_dir: data/images
+masks_dir: data/masks
+metadata_path: data/metadata.json
+output_dir: output
+visualizations_dir: output/visualizations
+report_path: output/evaluation_report.md
+
+classes: [background, circle, square, triangle]
+
+# Method A: K-Means color clustering (unsupervised — no class-color priors used)
+kmeans_max_clusters: 4    # K is auto-selected per image (2..this) via silhouette score
+kmeans_random_state: 42
+
+# Method B: Otsu threshold + connected components + nearest-color classification
+# Reference colors (BGR) used only by Method B to classify each connected
+# component after segmentation — Method A never sees these.
+class_reference_colors:
+  circle: [55, 55, 215]
+  square: [60, 175, 60]
+  triangle: [210, 140, 45]
+min_component_area: 80
+
+# Evaluation
+n_visualizations: 6
